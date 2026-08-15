@@ -1,0 +1,37 @@
+<svg viewBox="0 0 980 340" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="980" height="340" fill="#0d1117"/>
+  <text x="490" y="28" fill="#00ffff" font-size="16" text-anchor="middle" font-weight="bold">Roadmap — ideas for what's next</text>
+
+  <!-- Column 1: Now -->
+  <rect x="20" y="55" width="220" height="260" rx="10" fill="#161b22" stroke="#00ff41" stroke-width="2"/>
+  <text x="130" y="82" fill="#00ff41" font-size="14" text-anchor="middle" font-weight="bold">Now — v1</text>
+  <text x="35" y="112" fill="#f0f0f0" font-size="12">• Threaded resolution</text>
+  <text x="35" y="136" fill="#f0f0f0" font-size="12">• Per-domain caching</text>
+  <text x="35" y="160" fill="#f0f0f0" font-size="12">• Per-country files</text>
+  <text x="35" y="184" fill="#f0f0f0" font-size="12">• Run summary report</text>
+
+  <!-- Column 2: Next -->
+  <rect x="260" y="55" width="220" height="260" rx="10" fill="#161b22" stroke="#00ffff" stroke-width="2"/>
+  <text x="370" y="82" fill="#00ffff" font-size="14" text-anchor="middle" font-weight="bold">Next</text>
+  <text x="275" y="112" fill="#f0f0f0" font-size="12">• Retry failed lookups</text>
+  <text x="275" y="136" fill="#f0f0f0" font-size="12">• CSV / JSON export</text>
+  <text x="275" y="160" fill="#f0f0f0" font-size="12">• Config file support</text>
+  <text x="275" y="184" fill="#f0f0f0" font-size="12">• Lock-protected cache</text>
+
+  <!-- Column 3: Later -->
+  <rect x="500" y="55" width="220" height="260" rx="10" fill="#161b22" stroke="#ff00ff" stroke-width="2"/>
+  <text x="610" y="82" fill="#ff00ff" font-size="14" text-anchor="middle" font-weight="bold">Later</text>
+  <text x="515" y="112" fill="#f0f0f0" font-size="12">• Async I/O (aiohttp)</text>
+  <text x="515" y="136" fill="#f0f0f0" font-size="12">• Fallback geo API</text>
+  <text x="515" y="160" fill="#f0f0f0" font-size="12">• Resume interrupted runs</text>
+
+  <!-- Column 4: Ideas -->
+  <rect x="740" y="55" width="220" height="260" rx="10" fill="#161b22" stroke="#ff8800" stroke-width="2"/>
+  <text x="850" y="82" fill="#ff8800" font-size="13" text-anchor="middle" font-weight="bold">Ideas / exploring</text>
+  <text x="755" y="112" fill="#f0f0f0" font-size="12">• Docker image</text>
+  <text x="755" y="136" fill="#f0f0f0" font-size="12">• Tests + CI</text>
+  <text x="755" y="160" fill="#f0f0f0" font-size="12">• Merge with dashboard</text>
+  <text x="755" y="184" fill="#f0f0f0" font-size="12">• Web results viewer</text>
+
+  <text x="490" y="332" fill="#8b949e" font-size="11" text-anchor="middle">Backlog of ideas, not a release schedule or commitment</text>
+</svg>

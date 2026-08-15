@@ -1,0 +1,41 @@
+<svg viewBox="0 0 980 300" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="980" height="300" fill="#0d1117"/>
+  <text x="490" y="26" fill="#00ffff" font-size="16" text-anchor="middle" font-weight="bold">Domain Cache: Hit vs. Miss Path</text>
+
+  <!-- Box 1: new domain -->
+  <rect x="20" y="115" width="170" height="70" rx="10" fill="#161b22" stroke="#00b8d9" stroke-width="2"/>
+  <text x="105" y="145" fill="#f0f0f0" font-size="13" text-anchor="middle" font-weight="bold">Domain extracted</text>
+  <text x="105" y="163" fill="#8b949e" font-size="11" text-anchor="middle">from email</text>
+
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+
+  <line x1="190" y1="150" x2="212" y2="150" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Decision diamond -->
+  <polygon points="315,80 415,150 315,220 215,150" fill="#161b22" stroke="#ffff00" stroke-width="2"/>
+  <text x="315" y="146" fill="#f0f0f0" font-size="13" text-anchor="middle" font-weight="bold">In cache?</text>
+  <text x="315" y="163" fill="#8b949e" font-size="10" text-anchor="middle">(per-domain)</text>
+
+  <!-- HIT branch -->
+  <line x1="315" y1="80" x2="452" y2="65" stroke="#00ff41" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="378" y="55" fill="#00ff41" font-size="12" text-anchor="middle" font-weight="bold">HIT</text>
+  <rect x="460" y="30" width="230" height="70" rx="10" fill="#161b22" stroke="#00ff41" stroke-width="2"/>
+  <text x="575" y="58" fill="#f0f0f0" font-size="13" text-anchor="middle" font-weight="bold">Serve cached result</text>
+  <text x="575" y="76" fill="#8b949e" font-size="10.5" text-anchor="middle">no DNS / API call — instant</text>
+
+  <!-- MISS branch -->
+  <line x1="315" y1="220" x2="452" y2="248" stroke="#ff8800" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="378" y="252" fill="#ff8800" font-size="12" text-anchor="middle" font-weight="bold">MISS</text>
+  <rect x="460" y="225" width="230" height="70" rx="10" fill="#161b22" stroke="#ff8800" stroke-width="2"/>
+  <text x="575" y="253" fill="#f0f0f0" font-size="13" text-anchor="middle" font-weight="bold">DNS resolve + API call</text>
+  <text x="575" y="271" fill="#8b949e" font-size="10.5" text-anchor="middle">adds latency (~50–300ms)</text>
+
+  <line x1="690" y1="260" x2="722" y2="260" stroke="#8b949e" stroke-width="2" marker-end="url(#arrow2)"/>
+  <rect x="730" y="225" width="230" height="70" rx="10" fill="#161b22" stroke="#00ffff" stroke-width="2"/>
+  <text x="845" y="253" fill="#f0f0f0" font-size="13" text-anchor="middle" font-weight="bold">Store in cache</text>
+  <text x="845" y="271" fill="#8b949e" font-size="10.5" text-anchor="middle">return country code</text>
+</svg>
